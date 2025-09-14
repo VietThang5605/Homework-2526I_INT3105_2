@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  desktop:
+    build: .
+    image: my-vnc-desktop:1.0
+    ports:
+      # Ánh xạ cổng VNC: [cổng máy thật]:[cổng container]
+      - "5901:5901"
+      # Ánh xạ cổng SSH: dùng cổng 2222 ở máy thật để tránh trùng với SSH của máy thật
+      - "2222:22"
