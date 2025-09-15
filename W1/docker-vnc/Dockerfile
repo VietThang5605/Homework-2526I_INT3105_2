@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
     xfce4-goodies \
     xterm \
     xfce4-terminal \
+    xauth \
     tigervnc-standalone-server \
     tigervnc-tools \
     openssh-server \
